@@ -14,7 +14,7 @@ function App() {
   const [ph_number, setPhnumber] = useState("");
   const [password, setPassword] = useState("");
   const SESSION_DURATION = 1 * 3600 * 1000;
- 
+  console.log(process.env.NODE_ENV);
   const handleSubmit = async (e) => {
     e.preventDefault();
 

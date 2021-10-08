@@ -6,7 +6,7 @@ import { useState } from "react";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import AdminPage from "./pages/adminPage";
 import axios from "axios";
-import API_SERVER_VAL from "./setting";
+import API from "./setting"
 
 function App() {
   const history = useHistory();
@@ -14,12 +14,12 @@ function App() {
   const [ph_number, setPhnumber] = useState("");
   const [password, setPassword] = useState("");
   const SESSION_DURATION = 1 * 3600 * 1000;
- 
+  console.log(process.env.NODE_ENV);
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     await axios
-      .post(`${API_SERVER_VAL}`, {
+      .post(`${API_SERVER}`, {
         phone_number: ph_number,
         password: password,
       })
