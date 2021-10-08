@@ -30,8 +30,8 @@ function App() {
         localStorage.setItem("token", token);
         localStorage.setItem("expirationDate", expirationDate);
         setIsAdmin(true);
-        setPhnumber("");
-        setPassword("");
+        setPhnumber("")
+        setPassword("")
         console.log(token);
         history.push("/Admin");
       })
@@ -114,13 +114,7 @@ function App() {
             </div>
           </div>
         </Route>
-        <ProtectedRoute
-          path="/Admin"
-          Component={AdminPage}
-          isAdmin={isAdmin}
-          setIsAdmin={setIsAdmin}
-        />
-        ;
+        <ProtectedRoute path="/Admin" Component={AdminPage} isAdmin={isAdmin} setIsAdmin={setIsAdmin} />;
       </Switch>
     </div>
   );

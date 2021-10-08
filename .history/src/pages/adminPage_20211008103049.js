@@ -38,7 +38,7 @@ function AdminPage({ isAdmin, setIsAdmin }) {
             >
               <li>
                 <button
-                  className="md:p-4 py-2 rounded-lg block bg-purple-500 text-white cursor-pointer"
+                  className="md:p-4 py-2  block bg-purple-500 text-white cursor-pointer"
                   href="#"
                   onClick={handleSubmit}
                 >

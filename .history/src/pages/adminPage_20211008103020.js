@@ -18,8 +18,9 @@ function AdminPage({ isAdmin, setIsAdmin }) {
          items-center
          justify-end
          w-full
-         p-4
-         
+         py-4
+         md:py-0
+         px-4
          text-lg text-gray-700
          bg-white
        "
@@ -36,9 +37,10 @@ function AdminPage({ isAdmin, setIsAdmin }) {
              md:justify-between 
              md:pt-0"
             >
+              
               <li>
                 <button
-                  className="md:p-4 py-2 rounded-lg block bg-purple-500 text-white cursor-pointer"
+                  className="md:p-4 py-2  block bg-purple-500 text-white cursor-pointer"
                   href="#"
                   onClick={handleSubmit}
                 >

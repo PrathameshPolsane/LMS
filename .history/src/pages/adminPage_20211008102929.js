@@ -18,8 +18,9 @@ function AdminPage({ isAdmin, setIsAdmin }) {
          items-center
          justify-end
          w-full
-         p-4
-         
+         py-4
+         md:py-0
+         px-4
          text-lg text-gray-700
          bg-white
        "
@@ -37,8 +38,40 @@ function AdminPage({ isAdmin, setIsAdmin }) {
              md:pt-0"
             >
               <li>
+                <span
+                  className="md:p-4 py-2 block hover:text-purple-400"
+                  href="#"
+                >
+                  Features
+                </span>
+              </li>
+              <li>
+                <span
+                  className="md:p-4 py-2 block hover:text-purple-400"
+                  href="#"
+                >
+                  Pricing
+                </span>
+              </li>
+              <li>
+                <span
+                  className="md:p-4 py-2 block hover:text-purple-400"
+                  href="#"
+                >
+                  Customers
+                </span>
+              </li>
+              <li>
+                <span
+                  className="md:p-4 py-2 block hover:text-purple-400"
+                  href="#"
+                >
+                  Blog
+                </span>
+              </li>
+              <li>
                 <button
-                  className="md:p-4 py-2 rounded-lg block bg-purple-500 text-white cursor-pointer"
+                  className="md:p-4 py-2  block bg-purple-500 text-white cursor-pointer"
                   href="#"
                   onClick={handleSubmit}
                 >
@@ -53,7 +86,7 @@ function AdminPage({ isAdmin, setIsAdmin }) {
         className=" flex
           justify-center
           items-center
-          bg-gray-100
+          bg-gray-400
           mx-auto
           max-w-2xl
           rounded-lg
